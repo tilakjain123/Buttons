@@ -1,0 +1,709 @@
+/* Button design css starts here */
+button {
+    background-color: #cccccc;
+    color: black;
+    padding: 13px 17px !important;
+    border: none;
+    margin: 12px;
+    outline: none;
+    font-size: 19px;
+    padding: 7px 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+#bg1 {
+    background: linear-gradient(to right, #9900cc 0%, #ff3399 100%);
+    border: 1px solid rgb(207, 89, 113);
+}
+
+#bg2 {
+    background: linear-gradient(to bottom, #0099cc 0%, #00ffff 100%);
+    border: 1px solid darkturquoise;
+}
+
+#bg3 {
+    background: linear-gradient(to right, #ffe600 0%, #96da17 100%);
+    border: 1px solid green;
+}
+/* with hover starts here */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+/* underline from center */
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: linear-gradient(to top, #6600ff 0%, #cc00cc 100%);
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+/* underline from left */
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, #ff0066 0%, #990099 100%);
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+    right: 0;
+}
+
+/* Underline From Right */
+.hvr-underline-from-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(147deg, #f71a1a, #8e610f);
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-right:hover:before,
+.hvr-underline-from-right:focus:before,
+.hvr-underline-from-right:active:before {
+    left: 0;
+}
+/* overline from center */
+.hvr-overline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-overline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    top: 0;
+    background: linear-gradient(35deg, #422a7d, #058da7);
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-overline-from-center:hover:before,
+.hvr-overline-from-center:focus:before,
+.hvr-overline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+/* overline from left */
+.hvr-overline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-overline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    top: 0;
+    background: linear-gradient(35deg, #422a7d, #058da7);
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-overline-from-left:hover:before,
+.hvr-overline-from-left:focus:before,
+.hvr-overline-from-left:active:before {
+    right: 0;
+}
+/* overline From Right */
+.hvr-overline-from-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-overline-from-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    top: 0;
+    background: linear-gradient(35deg, #422a7d, #058da7);
+    height: 4px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-overline-from-right:hover:before,
+.hvr-overline-from-right:focus:before,
+.hvr-overline-from-right:active:before {
+    left: 0;
+}
+/* overlay starts here */
+/* overlay from center */
+.hvr-overlay-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-overlay-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+top: 51%;
+    bottom: 51%;
+    /* bottom: 0; */
+    right: 0;
+    left: 0;
+    background: linear-gradient(to top, #6600ff 0%, #cc00cc 100%);
+    /* height: 4px; */
+    -webkit-transition-property: top, bottom;
+    transition-property: top, bottom;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-overlay-from-center:hover:before,
+.hvr-overlay-from-center:focus:before,
+.hvr-overlay-from-center:active:before {
+    top: 0;
+    bottom: 0;
+}
+/* overlay from bottom */
+.hvr-overlay-from-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-overlay-from-bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(89deg, #5152f2, #5d6b90);
+    -webkit-transition-property: top, bottom;
+    transition-property: top, bottom;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-overlay-from-bottom:hover:before,
+.hvr-overlay-from-bottom:focus:before,
+.hvr-overlay-from-bottom:active:before {
+    top: 0;
+    bottom: 0;
+}
+/* overlay from top */
+.hvr-overlay-from-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-overlay-from-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+top: 0;
+    bottom: 100%;
+    /* bottom: 0; */
+    right: 0;
+    left: 0;
+    background: linear-gradient(49deg, #244181, #e31648);
+    /* height: 4px; */
+    -webkit-transition-property: bottom, top;
+    transition-property: bottom, top;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-overlay-from-top:hover:before,
+.hvr-overlay-from-top:focus:before,
+.hvr-overlay-from-top:active:before {
+    top: 0;
+    bottom: 0;
+}
+/* overlay from left */
+.hvr-overlay-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-overlay-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, #ff0066 0%, #990099 100%);
+    height: 100%;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-overlay-from-left:hover:before,
+.hvr-overlay-from-left:focus:before,
+.hvr-overlay-from-left:active:before {
+    right: 0;
+}
+/* overlay From Right */
+.hvr-overlay-from-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-overlay-from-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(147deg, #f71a1a, #8e610f);
+    height: 100%;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-overlay-from-right:hover:before,
+.hvr-overlay-from-right:focus:before,
+.hvr-overlay-from-right:active:before {
+    left: 0;
+}
+/* for glow hover */
+.hvr-glow:hover {
+    box-shadow: 0px 0px 10px black;
+    transition: 0.4s;
+}
+
+.hvr-glow-inset:hover {
+    box-shadow: inset 0px 0px 5px black;
+    transition: 0.4s;
+}
+
+/* for running */
+#running {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: .5s;
+}
+
+#running:hover span {
+    position: absolute;
+    display: block;
+}
+
+#running:hover span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, crimson);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+#running:hover span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, crimson);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+#running:hover span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, crimson);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+#running:hover span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, crimson);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* for glow on hover */
+.glow-on-hover {
+    color: black;
+    background: #cccccc;
+    position: relative;
+    z-index: 0;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #cccccc;
+    left: 0;
+    top: 0;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+#btn1-1 {
+    border: 1px solid rgb(168, 13, 240);
+    background: linear-gradient(to right, #cc33ff 0%, #0066cc 100%);
+}
+
+#btn1-1:hover {
+    background: linear-gradient(to left, #cc33ff 0%, #0066cc 100%);
+}
+/* btn1-(2- 6) with only keyframe animation */
+
+#btn1-2 {
+    background: linear-gradient(to right, rgb(0, 204, 255) 0%, rgb(5, 218, 93) 100%);
+    border: 1px solid rgb(17, 173, 88);
+}
+
+#btn1-2:hover {
+    animation: btn2 1s infinite;
+}
+
+@keyframes btn2 {
+    0% {
+        border: 1px solid crimson;
+    }
+
+    25% {
+        border: 1px solid rgb(149, 238, 16);
+    }
+
+    50% {
+        border: 1px solid darkviolet;
+    }
+
+    75% {
+        border: 1px solid orangered;
+    }
+
+    100% {
+        border: 1px solid rgb(27, 107, 107);
+    }
+}
+
+#btn1-3 {
+    background: linear-gradient(318deg, #e0b54b, #80a9ec);
+    border: 1px solid rgb(170, 197, 183);
+        /*border color is for demo only, you can use any other */
+}
+
+#btn1-3:hover {
+    animation: btn1-3 0.7s infinite;
+}
+
+@keyframes btn1-3 {
+    0% {
+        background: linear-gradient(to left, #9900cc 0%, #ff3399 33%);
+    }
+
+    25% {
+        background: linear-gradient(to right, #9900cc 20%, #ff3399 60%);
+    }
+
+    50% {
+        background: linear-gradient(to left, #9900cc 31%, #ff3399 83%);
+    }
+
+    75% {
+        background: linear-gradient(to right, #9900cc 60%, #ff3399 97%);
+    }
+
+    100% {
+        background: linear-gradient(to left, #9900cc 68%, #ff3399 100%);
+    }
+}
+
+#btn1-4 {
+    background: linear-gradient(187deg, #93189c, #c733dd);
+}
+
+#btn1-4:hover {
+    animation: btn1-4 0.7s infinite;
+}
+
+@keyframes btn1-4 {
+    0% {
+        background: linear-gradient(30deg, #cad187, #a614f2);
+    }
+
+    25% {
+        background: linear-gradient(55deg, #cad187, #a614f2);
+    }
+
+    50% {
+        background: linear-gradient(85deg, #cad187, #a614f2);
+    }
+
+    75% {
+        background: linear-gradient(125deg, #cad187, #a614f2);
+    }
+
+    100% {
+        background: linear-gradient(145deg, #cad187, #a614f2);
+    }
+}
+
+#btn1-5 {
+    background: linear-gradient(140deg, #33f5ee, #6c2b83);
+}
+
+#btn1-5:hover {
+    animation: btn1-5 0.8s infinite;
+}
+
+@keyframes btn1-5 {
+    0% {
+        background: linear-gradient(360deg, #2af5ee, #6c2b83);
+    }
+
+    25% {
+        background: linear-gradient(300deg, #33f5ee, #6c2b83);
+    }
+
+    50% {
+        background: linear-gradient(240deg, #33f5ee, #6c2b83);
+    }
+
+    75% {
+        background: linear-gradient(180deg, #33f5ee, #6c2b83);
+    }
+
+    100% {
+        background: linear-gradient(120deg, #33f5ee, #6c2b83);
+    }
+}
+#btn1-6:hover{
+    animation: btn1-6 0.7s infinite;
+}
+@keyframes btn1-6{
+    from{background: linear-gradient(34deg, #01b7ff, #0f8528);}
+    to{background: linear-gradient(34deg, #0f8528, #01b7ff);}
+}
