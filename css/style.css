@@ -69,3 +69,18 @@ a{
     font-size: 20px;
     color: rgb(0, 0, 0);
 }
+#featuring li{
+    list-style: none;
+}
+#featuring #quick-links {
+    background-color: rgb(14, 13, 13);
+    text-align: left;
+    color: white;
+    padding: 30px;
+    min-height: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#quick-links a{
+    color: rgb(255, 187, 0);
+    font-family: cursive;
+}
