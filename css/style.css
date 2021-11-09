@@ -57,10 +57,9 @@ a{
     color: rgb(32, 32, 241);
 }
 #featuring{
-    margin-top: 40px;
-    display: flex;
+   margin-top: 40px;
     justify-content: center;
-    /* background-color: whitesmoke; */
+    bottom: 0;
 }
 #featuring .feature{
     font-size: 20px;
