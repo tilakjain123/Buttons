@@ -3,7 +3,7 @@ Hello Guys,
 This are some **Buttons Designs**  to use in projects. You can see it [live here!](http://tilakjain123.github.io/Buttons/)
 
 If this link dosn't work see it [over here!](http://buttondesigns.netlify.app)
-### You can also contribute to this project by submitting your own button designs!
+
 There are different designs of **buttons** with different effects mainly:
 * Gradient Color Background
 * Hover effects
